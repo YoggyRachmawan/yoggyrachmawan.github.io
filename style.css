@@ -9,13 +9,11 @@
     }
 
     .icon-kontak {
-        font-size: 15px;
+        font-size: 20px;
     }
 
-    .link-kontak {
-        text-decoration: none;
-        color: black;
-        font-size: 13px;
+    .tulisan-kontak {
+        font-size: 18px;
     }
 }
 
@@ -37,11 +35,6 @@
     .logo-laravel {
         font-size: 38px;
     }
-
-    .link-kontak {
-        text-decoration: none;
-        color: black;
-    }
 }
 
 @media (min-width: 1020px) {
@@ -62,9 +55,12 @@
     .logo-laravel {
         font-size: 43px;
     }
+}
 
-    .link-kontak {
-        text-decoration: none;
-        color: black;
-    }
+.link-kontak {
+    text-decoration: none;
+}
+
+.tulisan-kontak {
+    color: black;
 }
