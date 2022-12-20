@@ -1,0 +1,70 @@
+@media (max-width: 576px) {
+    .display {
+        font-size: 60px;
+        font-weight: lighter;
+    }
+
+    .logo-laravel {
+        font-size: 30px;
+    }
+
+    .icon-kontak {
+        font-size: 15px;
+    }
+
+    .link-kontak {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 767px) {
+    .beranda {
+        height: 510px;
+    }
+
+    .container-beranda {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .display {
+        font-size: 70px;
+        font-weight: lighter;
+    }
+
+    .logo-laravel {
+        font-size: 38px;
+    }
+
+    .link-kontak {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (min-width: 1020px) {
+    .beranda {
+        height: 600px;
+    }
+
+    .container-beranda {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .display {
+        font-size: 80px;
+        font-weight: lighter;
+    }
+
+    .logo-laravel {
+        font-size: 43px;
+    }
+
+    .link-kontak {
+        text-decoration: none;
+        color: black;
+    }
+}
