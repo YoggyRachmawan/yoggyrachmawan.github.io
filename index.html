@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">YR</a>
+            <a class="navbar-brand fw-bold">YR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link active" href="#">BERANDA</a>
+                        <a class="nav-link" id="home" onclick="beranda()" href="#">BERANDA</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link" href="#tentang">TENTANG</a>
+                        <a class="nav-link" id="about" onclick="tentang()" href="#tentang">TENTANG</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link" href="#portofolio">PORTOFOLIO</a>
+                        <a class="nav-link" id="portfolio" onclick="portofolio()" href="#portofolio">PORTOFOLIO</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link" href="#kontak">KONTAK</a>
+                        <a class="nav-link" id="contact" onclick="kontak()" href="#kontak">KONTAK</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +60,8 @@
                 dignissimos,
                 odio quo recusandae dolore incidunt nihil provident illum harum assumenda officiis minima pariatur minus
                 enim eligendi laudantium!</p>
-            <a class="btn btn-outline-secondary btn-lg" href="#portofolio">Portofolio saya</a>
+            <a class="btn btn-outline-secondary btn-lg" id="portfolio" onclick="portofolio()"
+                href="#portofolio">Portofolio saya</a>
         </div>
     </section>
     <!-- //Beranda -->
@@ -134,7 +135,7 @@
                         <div class="carousel-inner">
                             <!-- Kasir Restoran -->
                             <div class="carousel-item active" data-bs-interval="5000">
-                                <h3> &#35; Kasir Restoran</h3>
+                                <h3> &#35; Restoran</h3>
                                 <div class="row mt-4">
                                     <div class="col-12 col-md-4 col-lg-4 text-center text-lg-start mb-4">
                                         <a type="button"
@@ -376,6 +377,42 @@
     <!-- Ionicons JS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Active Menu -->
+    <script>
+        const home = document.getElementById('home');
+        const about = document.getElementById('about');
+        const portfolio = document.getElementById('portfolio');
+        const contact = document.getElementById('contact');
+
+        function beranda() {
+            home.style.color = 'white';
+            about.style.color = '';
+            portfolio.style.color = '';
+            contact.style.color = '';
+        }
+
+        function tentang() {
+            home.style.color = '';
+            about.style.color = 'white';
+            portfolio.style.color = '';
+            contact.style.color = '';
+        }
+
+        function portofolio() {
+            home.style.color = '';
+            about.style.color = '';
+            portfolio.style.color = 'white';
+            contact.style.color = '';
+        }
+
+        function kontak() {
+            home.style.color = '';
+            about.style.color = '';
+            portfolio.style.color = '';
+            contact.style.color = 'white';
+        }
+    </script>
 
 </body>
 
