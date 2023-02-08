@@ -15,6 +15,18 @@
     .tulisan-kontak {
         font-size: 18px;
     }
+
+    .link-repository {
+        font-size: 12px;
+    }
+
+    .skill {
+        font-size: 14px;
+    }
+
+    .text-beranda {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 767px) {
@@ -35,6 +47,10 @@
     .logo-laravel {
         font-size: 38px;
     }
+
+    .text-beranda {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -54,6 +70,10 @@
 
     .logo-laravel {
         font-size: 43px;
+    }
+
+    .text-beranda {
+        font-size: 29px;
     }
 }
 
